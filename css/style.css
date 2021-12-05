@@ -68,28 +68,19 @@ body {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  margin-right: 50px;
 }
 
-.header-link::after {
+.header-link.current::after {
   content: "";
   width: 100%;
   height: 4px;
   left: 0;
   bottom: 0;
-  opacity: 0;
   border-radius: 2px;
   position: absolute;
   background-color: var(--main-button-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover::after {
-  opacity: 1;
-}
-
-.header-link:not(last child),
-.header-contact:not(last child) {
-  margin-right: 50px;
 }
 
 .header-list :hover,
@@ -143,6 +134,7 @@ body {
 .header-contact {
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-right: 50px;
 }
 
 .header-contacts {
@@ -274,16 +266,7 @@ body {
   color: var(--main-text-color);
 }
 
-.work-item-picture:not(last child),
-.uh-title-list:not(last child) {
-  padding-right: 30px;
-}
-
 /*work*/
-.container-work {
-  padding: 0;
-}
-
 .work-item-picture {
   position: relative;
 }
@@ -326,6 +309,11 @@ body {
 .work-item {
   display: flex;
   text-align: center;
+  margin-right: -30px;
+}
+
+.work-item-picture {
+  margin-right: 30px;
 }
 
 /*---work-buttons---*/
@@ -357,7 +345,7 @@ body {
   border-radius: 4px;
 }
 
-.btn-potfolio:not(last child) {
+.btn-potfolio:not(:last-child) {
   padding-right: 8px;
 }
 
@@ -419,9 +407,8 @@ body {
 }
 
 .work-portfolio-link {
-  flex-basis: calc((100% - 3 * 29px) / 3);
-  padding-left: 30px;
-  padding-top: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
   display: block;
 }
 
@@ -490,10 +477,9 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  margin-right: 30px;
 }
 
-.team-member-list:not(last child) {
+.team-member-list:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -523,7 +509,7 @@ body {
   border-radius: 50%;
 }
 
-.team-socialnetworks-item:not(last child) {
+.team-socialnetworks-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -559,7 +545,7 @@ body {
 /*---our-custumers---*/
 
 .custumers-text {
-  width: 390px;
+  width: 391px;
   height: 42px;
   left: 606px;
   top: 2401px;
@@ -571,6 +557,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
+  display: flex;
 }
 
 .custumers-list {
@@ -615,7 +602,7 @@ body {
 .icon-custumers {
   fill: var(--icon-socialnetwork-color);
 }
-.custumers-list-item:not(last child) {
+.custumers-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -698,7 +685,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-list:not(last child) {
+.footer-link-list:not(:last-child) {
   margin-bottom: 9px;
 }
 
