@@ -749,7 +749,7 @@ body {
 }
 
 .modal-title {
-  width: 448px;
+  width: 100%;
   height: 23px;
   font-size: 20px;
   font-weight: 700;
@@ -758,6 +758,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
   margin-bottom: 30px;
+}
+
+.label-text {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
 }
 
 .modal-form-input {
@@ -769,4 +776,19 @@ body {
   margin-bottom: 28px;
   padding-left: 42px;
   padding-right: 42px;
+}
+
+.modal-form-input-com {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form-input-com::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
