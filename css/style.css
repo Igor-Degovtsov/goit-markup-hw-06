@@ -757,7 +757,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .label-text {
@@ -796,6 +796,19 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.label-textarea {
-  width: 100%;
+.modal-agree-input {
+}
+
+.agree-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(117, 117, 117, 1);
+  padding-bottom: 4px;
+}
+
+.fieldset-agree {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: none;
 }
