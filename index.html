@@ -467,35 +467,34 @@
                 Оставьте свои данные, мы вам перезвоним
             </p>
             <form action="#" class="modal-form">
-                <label class="label-text">Имя
-                <input
+                <label for="text" class="label-text">Имя</label>
+                    <input
                     type="text"
+                    id="text"
                     name="Имя"
                     class="modal-form-input"
                     required>
-                </label>
-                <label class="label-text">Телефон
+                <label for="tel" class="label-text">Телефон</label>
                 <input 
                     type="tel" 
+                    id="tel"
                     name="Телефон" 
                     class="modal-form-input"
                     required>
-                </label>
-                <label class="label-text">Почта
+                <label for="email" class="label-text">Почта</label>
                 <input
                     type="email" 
+                    id="email"
                     name="Почта" 
                     class="modal-form-input"
                     required>
-                </label>
-                <label class="label-text">Комментарий
-                <input 
-                    type="text" 
-                    name="Комментарий" 
-                    placeholder="Введите текст"
-                    class="modal-form-input-com" 
-                    required>
-                </label>
+                <label for="commit" class="label-text">Комментарий</label>
+                <textarea 
+                name="" 
+                id="" 
+                class="modal-textarea"
+                placeholder="Введите текст"
+                ></textarea>
                 <button type="submit">Отправить</button>
             </form>
         </div>
