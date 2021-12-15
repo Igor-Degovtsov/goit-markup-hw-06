@@ -819,9 +819,18 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   padding-right: 42px;
+  color: var(--accent-text-color);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus,
+.modal-textarea:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-textarea {
@@ -832,6 +841,8 @@ body {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder {
@@ -853,4 +864,25 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   border: none;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  width: 12px;
+  height: 12px;
+  left: 15px;
+  top: 14px;
+  bottom: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+
+.input-icon:focus {
+  fill: var(--active-text-color);
 }
