@@ -955,9 +955,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-agree-input {
-}
-
 .modal-agree-input:checked + .agree-text .agree-item {
   background-color: #188ce8;
   border: none;
