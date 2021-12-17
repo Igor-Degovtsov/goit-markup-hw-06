@@ -729,6 +729,10 @@ body {
   color: white;
 }
 
+.footer-subscribe-text {
+  color: white;
+}
+
 .footer-subscribe::placeholder {
   font-size: 16px;
   line-height: 1.25;
